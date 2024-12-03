@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Project</title>
+    <link rel="stylesheet"  href="./output.css">
+</head>
+<body class="bg-[#062925]">
+    <!--navbar starts here-->
+    <div class="flex justify-center items-left ">
+        <div class="mt-2 rounded-md w-[1000px] flex flex-row gap-1 border-[2px] border-solid border-[#99dbd4] bg-slate-200 font-sans">
+            <p class="text-[#044a42] font-bold ml-2 text-1xl">IP:</p>
+            <a class="text-[#0f2e29] font-bold underline cursor-pointer hover:text-[#50ecb3]" href="#">103.48.197.6</a>
+            <p class="text-[#044a42] font-bold">Country:</p>
+            <img class="h-[21px] w-[25px] pt-1" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/2560px-Flag_of_India.svg.png" alt="">
+            <p class="mr-2 text-[#0f2e29] font-bold">India (Delhi, Dwarka)</p>
+        </div>
+    </div>    
+    <!--navbar ends here-->
+
+    <!--input content starts here-->
+    <div class="flex justify-center items-center ">
+        <div class="mt-2 rounded-md w-[1000px] flex flex-row gap-1 border-[2px] border-solid border-[#99dbd4] bg-white font-sans">
+            <img class="size-28 pl-2 pt-2" src="image.png" alt="">
+            <div class="flex flex-col">
+                <form id="pingform" class="pt-2">
+                    <h3 class="text-[#044a42] font-bold ml-2 text-1xl">Enter Domain Name Or IP Address</h3>
+                    <input id="urlInput" class="placeholder-[#0f2e29] text-[#044a42] font-thin ml-2 pl-2 pr-2 pt-1 pb-1 my-1 text-1xl bg-[#bae5d5] w-[500px] border=solid border-[1px] rounded-sm border-[#0f2e29]" type="text" placeholder="Eg-www.yourdomain.com">
+                    <div id="pingbutton">
+                        <button type="submit" class="ml-2 text-[20px] w-[80px] font-serif hover:translate-x-1 hover:translate-y-1  bg-[#1c4641] font-bold hover:bg-[#3db16f] text-white border-solid border-[1px] border-[#99dbd4] text-center rounded-md mt-1">PING</button>
+                    </div>
+                </form>
+                
+                <br>
+                <div id="pingResults" class="text-[#b8d1c9]  ml-2 pt-3 pl-3 pr-3 pb-3  rounded text-[20px] bg-blue-200 font-normal  border-[2px] border-solid border-[#1c4641] "><span class="text-[#1c4641]">Ping Result Will Show Here</span></div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <!--input content ends here-->
+
+    <!--main content starts here-->
+    <div class="flex justify-center items-center">
+        <div class="mt-2 rounded-md w-[1000px] flex flex-col gap-1 border-[2px] border-solid border-[#99dbd4] bg-white font-sans">
+            <div class="bg-[#9eb7fc] w-full items-center justify-center flex">
+                <h1 class="font-bold italic text-orange-700 text-[30px]">PING SERVER</h1>
+            </div>
+            <h2 class="text-1xl font-sans text-black ml-3 text-[20px] font-semibold">What is Ping Test?</h2>
+            <p class="ml-3 italic text-[18px] text-black">A ping test determines whether a device is reachable and also analyses the amount of time data travels from one device to another. It sends a "ping" of data and listens for a "pong" response. It measures network responsiveness and helps identify issues such as latency or packet loss. A fast, consistent response time indicates a healthy network.</p>
+            <div class="flex  ">
+                 <img class="h-[380px] w-[1000px] ml-3 mr-3" src="https://bunnyacademy.b-cdn.net/what-is-ping-sequence-how-does-it-work-and-what-it-does.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!--main content starts here-->
+
+    <!--footer starts here-->
+    <div class="flex justify-center items-center ">
+        <div class="mt-2 rounded-md w-[1000px] flex gap-1 border-[2px] border-solid border-[#99dbd4] font-sans bg-slate-200">
+            <div class="bg-slate-200 flex flex-col w-full items-center justify-center">
+                <h1 class=" italic text-black text-[15px]">Made By - Akshar Consultancy Services pvt ltd</h1>
+                <h1 class=" italic text-black text-[15px]">Copyright©2024</h1>
+            </div>
+        </div>
+    </div>
+    <!--footer ends here-->
+
+    <script src="pingscript.js"></script>
+    <!-- <script src="pingscr.js"></script> -->
+</body>
+</html>
